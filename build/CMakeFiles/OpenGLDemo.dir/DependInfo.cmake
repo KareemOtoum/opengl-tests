@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/USER/Desktop/opengltest/src/glad.c" "CMakeFiles/OpenGLDemo.dir/src/glad.c.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/glad.c.o.d"
   "/mnt/c/Users/USER/Desktop/opengltest/src/main.cpp" "CMakeFiles/OpenGLDemo.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/main.cpp.o.d"
   "/mnt/c/Users/USER/Desktop/opengltest/src/shader.cpp" "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o.d"
+  "/mnt/c/Users/USER/Desktop/opengltest/src/std_loader.cpp" "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

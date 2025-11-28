@@ -201,6 +201,30 @@ src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
+src/std_loader.o: src/std_loader.cpp.o
+.PHONY : src/std_loader.o
+
+# target to build an object file
+src/std_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o
+.PHONY : src/std_loader.cpp.o
+
+src/std_loader.i: src/std_loader.cpp.i
+.PHONY : src/std_loader.i
+
+# target to preprocess a source file
+src/std_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.i
+.PHONY : src/std_loader.cpp.i
+
+src/std_loader.s: src/std_loader.cpp.s
+.PHONY : src/std_loader.s
+
+# target to generate assembly for a file
+src/std_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.s
+.PHONY : src/std_loader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
+	@echo "... src/std_loader.o"
+	@echo "... src/std_loader.i"
+	@echo "... src/std_loader.s"
 .PHONY : help
 
 

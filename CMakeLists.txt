@@ -8,7 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB SOURCES 
     src/main.cpp
     src/glad.c
-    src/shader.cpp)
+    src/shader.cpp
+    src/std_loader.cpp)
 
 cmake_policy(SET CMP0072 NEW)
 set(OpenGL_GL_PREFERENCE GLVND)

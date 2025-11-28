@@ -3,6 +3,9 @@
 in vec3 ourcol;
 out vec4 fragcol;
 
+uniform sampler2D ourTexture;
+in vec2 texcoord;
+
 void main() {
-    fragcol = vec4(ourcol, 1.0);
+    fragcol = texture(ourTexture, texcoord);
 }
