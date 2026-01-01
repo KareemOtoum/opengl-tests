@@ -17,8 +17,9 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # Manually link GLFW (since you compiled from source)
 target_include_directories(${PROJECT_NAME} PRIVATE /usr/local/include include)
 
-target_link_libraries(${PROJECT_NAME}
-    /usr/local/lib/libglfw3.a)
+add_subdirectory(external/glfw)
+include_directories(external/glfw/include)
+target_link_libraries(${PROJECT_NAME} glfw)
 
 # System libraries
 if(WIN32) 
