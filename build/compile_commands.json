@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/otoum/opengltest/build",
+  "command": "/usr/bin/gcc  -I/home/otoum/opengltest/include -g -o CMakeFiles/OpenGLDemo.dir/src/glad.c.o -c /home/otoum/opengltest/src/glad.c",
+  "file": "/home/otoum/opengltest/src/glad.c",
+  "output": "CMakeFiles/OpenGLDemo.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/otoum/opengltest/build",
+  "command": "/usr/bin/g++  -I/home/otoum/opengltest/include -g -std=gnu++20 -o CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o -c /home/otoum/opengltest/src/shader.cpp",
+  "file": "/home/otoum/opengltest/src/shader.cpp",
+  "output": "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o"
+},
+{
+  "directory": "/home/otoum/opengltest/build",
+  "command": "/usr/bin/g++  -I/home/otoum/opengltest/include -g -std=gnu++20 -o CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o -c /home/otoum/opengltest/src/std_loader.cpp",
+  "file": "/home/otoum/opengltest/src/std_loader.cpp",
+  "output": "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o"
+},
+{
+  "directory": "/home/otoum/opengltest/build",
+  "command": "/usr/bin/g++  -I/home/otoum/opengltest/include -g -std=gnu++20 -o CMakeFiles/OpenGLDemo.dir/src/water.cpp.o -c /home/otoum/opengltest/src/water.cpp",
+  "file": "/home/otoum/opengltest/src/water.cpp",
+  "output": "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o"
+}
+]

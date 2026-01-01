@@ -1,8 +1,7 @@
-CMakeFiles/OpenGLDemo.dir/src/main.cpp.o: \
- /mnt/c/Users/USER/Desktop/opengltest/src/main.cpp \
- /usr/include/stdc-predef.h \
- /mnt/c/Users/USER/Desktop/opengltest/include/glad/glad.h \
- /mnt/c/Users/USER/Desktop/opengltest/include/KHR/khrplatform.h \
+CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: \
+ /home/otoum/opengltest/src/water.cpp /usr/include/stdc-predef.h \
+ /home/otoum/opengltest/include/glad/glad.h \
+ /home/otoum/opengltest/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -183,11 +182,15 @@ CMakeFiles/OpenGLDemo.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/c/Users/USER/Desktop/opengltest/include/shader.h \
- /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
+ /home/otoum/opengltest/include/shader.h /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
- /mnt/c/Users/USER/Desktop/opengltest/src/stb_image.h \
- /usr/include/c++/13/stdlib.h
+ /home/otoum/opengltest/src/stb_image.h /usr/include/c++/13/stdlib.h \
+ /home/otoum/opengltest/include/window.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc

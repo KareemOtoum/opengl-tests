@@ -6,6 +6,9 @@
 #include "shader.h"
 #include "stb_image.h"
 
+static constexpr int k_window_width { 800 };
+static constexpr int k_window_height { 600 };
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void process_input(GLFWwindow *window);
 void render_triangle();
@@ -17,7 +20,7 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_DECORATED, GLFW_TRUE);
     
-    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGLDemo", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(k_window_width, k_window_height, "OpenGLDemo", NULL, NULL);
 
     if(!window) {
         std::cout << "failed to create window\n";

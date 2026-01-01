@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/USER/Desktop/opengltest
+CMAKE_SOURCE_DIR = /home/otoum/opengltest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/USER/Desktop/opengltest/build
+CMAKE_BINARY_DIR = /home/otoum/opengltest/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles /mnt/c/Users/USER/Desktop/opengltest/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/otoum/opengltest/build/CMakeFiles /home/otoum/opengltest/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/otoum/opengltest/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,30 +153,6 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 src/shader.o: src/shader.cpp.o
 .PHONY : src/shader.o
 
@@ -225,6 +201,30 @@ src/std_loader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.s
 .PHONY : src/std_loader.cpp.s
 
+src/water.o: src/water.cpp.o
+.PHONY : src/water.o
+
+# target to build an object file
+src/water.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/water.cpp.o
+.PHONY : src/water.cpp.o
+
+src/water.i: src/water.cpp.i
+.PHONY : src/water.i
+
+# target to preprocess a source file
+src/water.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/water.cpp.i
+.PHONY : src/water.cpp.i
+
+src/water.s: src/water.cpp.s
+.PHONY : src/water.s
+
+# target to generate assembly for a file
+src/water.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLDemo.dir/build.make CMakeFiles/OpenGLDemo.dir/src/water.cpp.s
+.PHONY : src/water.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,15 +237,15 @@ help:
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
 	@echo "... src/std_loader.o"
 	@echo "... src/std_loader.i"
 	@echo "... src/std_loader.s"
+	@echo "... src/water.o"
+	@echo "... src/water.i"
+	@echo "... src/water.s"
 .PHONY : help
 
 

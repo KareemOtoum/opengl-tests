@@ -1,6 +1,5 @@
-CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: \
- /home/otoum/opengltest/src/shader.cpp /usr/include/stdc-predef.h \
- /home/otoum/opengltest/include/shader.h \
+CMakeFiles/OpenGLDemo.dir/src/ellipse.cpp.o: \
+ /home/otoum/opengltest/src/ellipse.cpp /usr/include/stdc-predef.h \
  /home/otoum/opengltest/include/glad/glad.h \
  /home/otoum/opengltest/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -19,18 +18,19 @@ CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/fstream /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/local/include/GLFW/glfw3.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/istream \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
@@ -157,10 +157,40 @@ CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: \
  /usr/include/c++/13/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
  /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
- /usr/include/c++/13/bits/ostream.tcc \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/bits/basic_ios.tcc \
+ /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/otoum/opengltest/include/shader.h /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc \
+ /home/otoum/opengltest/src/stb_image.h /usr/include/c++/13/stdlib.h \
+ /home/otoum/opengltest/include/window.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc

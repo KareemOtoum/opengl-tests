@@ -1,11 +1,9 @@
 #version 330 core
 
-in vec3 ourcol;
 out vec4 fragcol;
-
-uniform sampler2D ourTexture;
-in vec2 texcoord;
+uniform vec2 resolution;
 
 void main() {
-    fragcol = texture(ourTexture, texcoord);
+    
+    fragcol = vec4(0.46, 0.74, 0.75, 1.);
 }

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/USER/Desktop/opengltest
+CMAKE_SOURCE_DIR = /home/otoum/opengltest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/USER/Desktop/opengltest/build
+CMAKE_BINARY_DIR = /home/otoum/opengltest/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OpenGLDemo.dir/depend.make
@@ -70,90 +70,79 @@ include CMakeFiles/OpenGLDemo.dir/progress.make
 include CMakeFiles/OpenGLDemo.dir/flags.make
 
 CMakeFiles/OpenGLDemo.dir/src/glad.c.o: CMakeFiles/OpenGLDemo.dir/flags.make
-CMakeFiles/OpenGLDemo.dir/src/glad.c.o: /mnt/c/Users/USER/Desktop/opengltest/src/glad.c
+CMakeFiles/OpenGLDemo.dir/src/glad.c.o: /home/otoum/opengltest/src/glad.c
 CMakeFiles/OpenGLDemo.dir/src/glad.c.o: CMakeFiles/OpenGLDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/OpenGLDemo.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/glad.c.o -MF CMakeFiles/OpenGLDemo.dir/src/glad.c.o.d -o CMakeFiles/OpenGLDemo.dir/src/glad.c.o -c /mnt/c/Users/USER/Desktop/opengltest/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/OpenGLDemo.dir/src/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/glad.c.o -MF CMakeFiles/OpenGLDemo.dir/src/glad.c.o.d -o CMakeFiles/OpenGLDemo.dir/src/glad.c.o -c /home/otoum/opengltest/src/glad.c
 
 CMakeFiles/OpenGLDemo.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/OpenGLDemo.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/USER/Desktop/opengltest/src/glad.c > CMakeFiles/OpenGLDemo.dir/src/glad.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/otoum/opengltest/src/glad.c > CMakeFiles/OpenGLDemo.dir/src/glad.c.i
 
 CMakeFiles/OpenGLDemo.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/OpenGLDemo.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/USER/Desktop/opengltest/src/glad.c -o CMakeFiles/OpenGLDemo.dir/src/glad.c.s
-
-CMakeFiles/OpenGLDemo.dir/src/main.cpp.o: CMakeFiles/OpenGLDemo.dir/flags.make
-CMakeFiles/OpenGLDemo.dir/src/main.cpp.o: /mnt/c/Users/USER/Desktop/opengltest/src/main.cpp
-CMakeFiles/OpenGLDemo.dir/src/main.cpp.o: CMakeFiles/OpenGLDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLDemo.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/main.cpp.o -MF CMakeFiles/OpenGLDemo.dir/src/main.cpp.o.d -o CMakeFiles/OpenGLDemo.dir/src/main.cpp.o -c /mnt/c/Users/USER/Desktop/opengltest/src/main.cpp
-
-CMakeFiles/OpenGLDemo.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLDemo.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/USER/Desktop/opengltest/src/main.cpp > CMakeFiles/OpenGLDemo.dir/src/main.cpp.i
-
-CMakeFiles/OpenGLDemo.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLDemo.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/USER/Desktop/opengltest/src/main.cpp -o CMakeFiles/OpenGLDemo.dir/src/main.cpp.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/otoum/opengltest/src/glad.c -o CMakeFiles/OpenGLDemo.dir/src/glad.c.s
 
 CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: CMakeFiles/OpenGLDemo.dir/flags.make
-CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: /mnt/c/Users/USER/Desktop/opengltest/src/shader.cpp
+CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: /home/otoum/opengltest/src/shader.cpp
 CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: CMakeFiles/OpenGLDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o -MF CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o.d -o CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o -c /mnt/c/Users/USER/Desktop/opengltest/src/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o -MF CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o.d -o CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o -c /home/otoum/opengltest/src/shader.cpp
 
 CMakeFiles/OpenGLDemo.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLDemo.dir/src/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/USER/Desktop/opengltest/src/shader.cpp > CMakeFiles/OpenGLDemo.dir/src/shader.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/otoum/opengltest/src/shader.cpp > CMakeFiles/OpenGLDemo.dir/src/shader.cpp.i
 
 CMakeFiles/OpenGLDemo.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLDemo.dir/src/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/USER/Desktop/opengltest/src/shader.cpp -o CMakeFiles/OpenGLDemo.dir/src/shader.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/otoum/opengltest/src/shader.cpp -o CMakeFiles/OpenGLDemo.dir/src/shader.cpp.s
 
 CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o: CMakeFiles/OpenGLDemo.dir/flags.make
-CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o: /mnt/c/Users/USER/Desktop/opengltest/src/std_loader.cpp
+CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o: /home/otoum/opengltest/src/std_loader.cpp
 CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o: CMakeFiles/OpenGLDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o -MF CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o.d -o CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o -c /mnt/c/Users/USER/Desktop/opengltest/src/std_loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o -MF CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o.d -o CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o -c /home/otoum/opengltest/src/std_loader.cpp
 
 CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/USER/Desktop/opengltest/src/std_loader.cpp > CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/otoum/opengltest/src/std_loader.cpp > CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.i
 
 CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/USER/Desktop/opengltest/src/std_loader.cpp -o CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/otoum/opengltest/src/std_loader.cpp -o CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.s
+
+CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: CMakeFiles/OpenGLDemo.dir/flags.make
+CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: /home/otoum/opengltest/src/water.cpp
+CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: CMakeFiles/OpenGLDemo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGLDemo.dir/src/water.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGLDemo.dir/src/water.cpp.o -MF CMakeFiles/OpenGLDemo.dir/src/water.cpp.o.d -o CMakeFiles/OpenGLDemo.dir/src/water.cpp.o -c /home/otoum/opengltest/src/water.cpp
+
+CMakeFiles/OpenGLDemo.dir/src/water.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenGLDemo.dir/src/water.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/otoum/opengltest/src/water.cpp > CMakeFiles/OpenGLDemo.dir/src/water.cpp.i
+
+CMakeFiles/OpenGLDemo.dir/src/water.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenGLDemo.dir/src/water.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/otoum/opengltest/src/water.cpp -o CMakeFiles/OpenGLDemo.dir/src/water.cpp.s
 
 # Object files for target OpenGLDemo
 OpenGLDemo_OBJECTS = \
 "CMakeFiles/OpenGLDemo.dir/src/glad.c.o" \
-"CMakeFiles/OpenGLDemo.dir/src/main.cpp.o" \
 "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o" \
-"CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o"
+"CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o" \
+"CMakeFiles/OpenGLDemo.dir/src/water.cpp.o"
 
 # External object files for target OpenGLDemo
 OpenGLDemo_EXTERNAL_OBJECTS =
 
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/glad.c.o
-OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/main.cpp.o
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o
+OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/water.cpp.o
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/build.make
 OpenGLDemo: /usr/local/lib/libglfw3.a
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libX11.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXrandr.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXinerama.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXi.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXcursor.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libGLX.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXext.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXrender.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libXfixes.so
-OpenGLDemo: /usr/lib/x86_64-linux-gnu/libX11.so
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable OpenGLDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable OpenGLDemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGLDemo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -165,6 +154,6 @@ CMakeFiles/OpenGLDemo.dir/clean:
 .PHONY : CMakeFiles/OpenGLDemo.dir/clean
 
 CMakeFiles/OpenGLDemo.dir/depend:
-	cd /mnt/c/Users/USER/Desktop/opengltest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/USER/Desktop/opengltest /mnt/c/Users/USER/Desktop/opengltest /mnt/c/Users/USER/Desktop/opengltest/build /mnt/c/Users/USER/Desktop/opengltest/build /mnt/c/Users/USER/Desktop/opengltest/build/CMakeFiles/OpenGLDemo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/otoum/opengltest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/otoum/opengltest /home/otoum/opengltest /home/otoum/opengltest/build /home/otoum/opengltest/build /home/otoum/opengltest/build/CMakeFiles/OpenGLDemo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/OpenGLDemo.dir/depend
 

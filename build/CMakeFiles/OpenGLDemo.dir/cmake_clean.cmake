@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OpenGLDemo.dir/src/glad.c.o"
   "CMakeFiles/OpenGLDemo.dir/src/glad.c.o.d"
-  "CMakeFiles/OpenGLDemo.dir/src/main.cpp.o"
-  "CMakeFiles/OpenGLDemo.dir/src/main.cpp.o.d"
   "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o"
   "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o.d"
   "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o"
   "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o.d"
+  "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o"
+  "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o.d"
   "OpenGLDemo"
   "OpenGLDemo.pdb"
 )
