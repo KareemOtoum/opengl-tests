@@ -140,7 +140,9 @@ OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/src/water.cpp.o
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/build.make
-OpenGLDemo: /usr/local/lib/libglfw3.a
+OpenGLDemo: external/glfw/src/libglfw3.a
+OpenGLDemo: /usr/lib/x86_64-linux-gnu/librt.a
+OpenGLDemo: /usr/lib/x86_64-linux-gnu/libm.so
 OpenGLDemo: CMakeFiles/OpenGLDemo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable OpenGLDemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGLDemo.dir/link.txt --verbose=$(VERBOSE)

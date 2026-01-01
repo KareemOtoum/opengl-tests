@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/g++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/otoum/opengltest/include
+C_INCLUDES = -I/home/otoum/opengltest/include -I/home/otoum/opengltest/external/glfw/include
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/otoum/opengltest/include
+CXX_INCLUDES = -I/home/otoum/opengltest/include -I/home/otoum/opengltest/external/glfw/include
 
 CXX_FLAGS = -g -std=gnu++20
 

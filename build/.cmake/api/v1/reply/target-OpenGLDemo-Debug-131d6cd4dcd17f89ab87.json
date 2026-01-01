@@ -12,11 +12,13 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"target_include_directories"
+			"target_include_directories",
+			"include_directories"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"external/glfw/src/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -32,19 +34,34 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 27,
+				"line" : 28,
 				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 220,
+				"parent" : 4
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 21,
 				"parent" : 0
 			}
 		]
@@ -61,8 +78,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 6,
 					"path" : "/home/otoum/opengltest/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/otoum/opengltest/external/glfw/include"
 				}
 			],
 			"language" : "C",
@@ -81,8 +102,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 6,
 					"path" : "/home/otoum/opengltest/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/otoum/opengltest/external/glfw/include"
 				}
 			],
 			"language" : "CXX",
@@ -102,6 +127,13 @@
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@ca12bac854c2ac6b2230"
+		}
+	],
 	"id" : "OpenGLDemo::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
@@ -117,7 +149,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libglfw3.a",
+				"fragment" : "external/glfw/src/libglfw3.a",
 				"role" : "libraries"
 			},
 			{
@@ -143,6 +175,20 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/librt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
 				"role" : "libraries"
 			},
 			{
