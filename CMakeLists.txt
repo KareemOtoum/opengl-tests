@@ -13,9 +13,7 @@ file(GLOB SOURCES
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
-
-# Manually link GLFW (since you compiled from source)
-target_include_directories(${PROJECT_NAME} PRIVATE /usr/local/include include)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 add_subdirectory(external/glfw)
 include_directories(external/glfw/include)
