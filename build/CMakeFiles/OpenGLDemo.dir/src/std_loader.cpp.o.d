@@ -1,6 +1,6 @@
 CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o: \
- /home/otoum/opengltest/src/std_loader.cpp /usr/include/stdc-predef.h \
- /home/otoum/opengltest/src/stb_image.h /usr/include/stdio.h \
+ /home/kareem/opengl-tests/src/std_loader.cpp /usr/include/stdc-predef.h \
+ /home/kareem/opengl-tests/src/stb_image.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

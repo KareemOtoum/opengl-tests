@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/otoum/opengltest/src/glad.c" "CMakeFiles/OpenGLDemo.dir/src/glad.c.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/glad.c.o.d"
-  "/home/otoum/opengltest/src/shader.cpp" "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o.d"
-  "/home/otoum/opengltest/src/std_loader.cpp" "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o.d"
-  "/home/otoum/opengltest/src/water.cpp" "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o.d"
+  "/home/kareem/opengl-tests/src/glad.c" "CMakeFiles/OpenGLDemo.dir/src/glad.c.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/glad.c.o.d"
+  "/home/kareem/opengl-tests/src/shader.cpp" "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o.d"
+  "/home/kareem/opengl-tests/src/std_loader.cpp" "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/std_loader.cpp.o.d"
+  "/home/kareem/opengl-tests/src/water.cpp" "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o" "gcc" "CMakeFiles/OpenGLDemo.dir/src/water.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/otoum/opengltest
+CMAKE_SOURCE_DIR = /home/kareem/opengl-tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/otoum/opengltest/build
+CMAKE_BINARY_DIR = /home/kareem/opengl-tests/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include external/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include external/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 external/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/otoum/opengltest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /home/otoum/opengltest/external/glfw/src && /usr/bin/cmake -P /home/otoum/opengltest/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kareem/opengl-tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/kareem/opengl-tests/external/glfw/src && /usr/bin/cmake -P /home/kareem/opengl-tests/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: external/glfw/src/CMakeFiles/update_mappings
 update_mappings: external/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ external/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/build
 
 external/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /home/otoum/opengltest/build/external/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/kareem/opengl-tests/build/external/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 external/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /home/otoum/opengltest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/otoum/opengltest /home/otoum/opengltest/external/glfw/src /home/otoum/opengltest/build /home/otoum/opengltest/build/external/glfw/src /home/otoum/opengltest/build/external/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kareem/opengl-tests/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kareem/opengl-tests /home/kareem/opengl-tests/external/glfw/src /home/kareem/opengl-tests/build /home/kareem/opengl-tests/build/external/glfw/src /home/kareem/opengl-tests/build/external/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/depend
 

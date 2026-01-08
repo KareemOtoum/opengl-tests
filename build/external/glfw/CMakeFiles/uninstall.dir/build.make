@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/otoum/opengltest
+CMAKE_SOURCE_DIR = /home/kareem/opengl-tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/otoum/opengltest/build
+CMAKE_BINARY_DIR = /home/kareem/opengl-tests/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include external/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include external/glfw/CMakeFiles/uninstall.dir/progress.make
 
 external/glfw/CMakeFiles/uninstall:
-	cd /home/otoum/opengltest/build/external/glfw && /usr/bin/cmake -P /home/otoum/opengltest/build/external/glfw/cmake_uninstall.cmake
+	cd /home/kareem/opengl-tests/build/external/glfw && /usr/bin/cmake -P /home/kareem/opengl-tests/build/external/glfw/cmake_uninstall.cmake
 
 uninstall: external/glfw/CMakeFiles/uninstall
 uninstall: external/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ external/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/build
 
 external/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/otoum/opengltest/build/external/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/kareem/opengl-tests/build/external/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/clean
 
 external/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/otoum/opengltest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/otoum/opengltest /home/otoum/opengltest/external/glfw /home/otoum/opengltest/build /home/otoum/opengltest/build/external/glfw /home/otoum/opengltest/build/external/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kareem/opengl-tests/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kareem/opengl-tests /home/kareem/opengl-tests/external/glfw /home/kareem/opengl-tests/build /home/kareem/opengl-tests/build/external/glfw /home/kareem/opengl-tests/build/external/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/depend
 

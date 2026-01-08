@@ -1,7 +1,7 @@
 CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: \
- /home/otoum/opengltest/src/water.cpp /usr/include/stdc-predef.h \
- /home/otoum/opengltest/include/glad/glad.h \
- /home/otoum/opengltest/include/KHR/khrplatform.h \
+ /home/kareem/opengl-tests/src/water.cpp /usr/include/stdc-predef.h \
+ /home/kareem/opengl-tests/include/glad/glad.h \
+ /home/kareem/opengl-tests/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,7 +18,7 @@ CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/otoum/opengltest/external/glfw/include/GLFW/glfw3.h \
+ /home/kareem/opengl-tests/external/glfw/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -182,14 +182,14 @@ CMakeFiles/OpenGLDemo.dir/src/water.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/otoum/opengltest/include/shader.h /usr/include/c++/13/fstream \
+ /home/kareem/opengl-tests/include/shader.h /usr/include/c++/13/fstream \
  /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/otoum/opengltest/src/stb_image.h /usr/include/c++/13/stdlib.h \
- /home/otoum/opengltest/include/window.h /usr/include/c++/13/vector \
+ /home/kareem/opengl-tests/src/stb_image.h /usr/include/c++/13/stdlib.h \
+ /home/kareem/opengl-tests/include/window.h /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \

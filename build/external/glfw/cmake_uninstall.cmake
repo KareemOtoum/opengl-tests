@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/otoum/opengltest/build/external/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/otoum/opengltest/build/external/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/home/kareem/opengl-tests/build/external/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/kareem/opengl-tests/build/external/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/home/otoum/opengltest/build/external/glfw/install_manifest.txt" files)
+file(READ "/home/kareem/opengl-tests/build/external/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

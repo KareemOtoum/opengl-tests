@@ -1,8 +1,8 @@
 CMakeFiles/OpenGLDemo.dir/src/shader.cpp.o: \
- /home/otoum/opengltest/src/shader.cpp /usr/include/stdc-predef.h \
- /home/otoum/opengltest/include/shader.h \
- /home/otoum/opengltest/include/glad/glad.h \
- /home/otoum/opengltest/include/KHR/khrplatform.h \
+ /home/kareem/opengl-tests/src/shader.cpp /usr/include/stdc-predef.h \
+ /home/kareem/opengl-tests/include/shader.h \
+ /home/kareem/opengl-tests/include/glad/glad.h \
+ /home/kareem/opengl-tests/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
