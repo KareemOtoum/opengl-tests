@@ -3,6 +3,9 @@ project(OpenGLDemo)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address,undefined -g -O0")
+
+add_subdirectory(external/glfw)
 
 # Collect all .cpp files
 file(GLOB SOURCES 
@@ -10,18 +13,22 @@ file(GLOB SOURCES
     src/glad.c
     src/shader.cpp
     src/std_loader.cpp
+    src/square.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
-add_subdirectory(external/glfw)
-include_directories(external/glfw/include)
-target_link_libraries(${PROJECT_NAME} glfw)
 
-# System libraries
-if(WIN32) 
-    target_link_libraries(${PROJECT_NAME} opengl32)
-elseif(UNIX)
-    target_link_libraries(${PROJECT_NAME} GL X11 Xrandr Xi pthread dl)
-endif()
+# GLM
+include(FetchContent)
+
+FetchContent_Declare(
+    glm
+	GIT_REPOSITORY	https://github.com/g-truc/glm.git
+	GIT_TAG 	0af55ccecd98d4e5a8d1fad7de25ba429d60e863 #refs/tags/1.0.1
+)
+    
+FetchContent_MakeAvailable(glm)
+    
+target_link_libraries(${PROJECT_NAME} PRIVATE glm::glm glfw)

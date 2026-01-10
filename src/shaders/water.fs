@@ -5,5 +5,5 @@ uniform vec2 resolution;
 
 void main() {
     
-    fragcol = vec4(0.46, 0.74, 0.75, 1.);
+    fragcol = vec4(0.46, 0.74, 0.75, 0.8);
 }

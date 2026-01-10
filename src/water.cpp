@@ -6,11 +6,12 @@
 #include "shader.h"
 #include "stb_image.h"
 #include "window.h"
+#include "square.h"
 #include <vector>
 #include <iostream>
 
-static constexpr int k_window_width{800};
-static constexpr int k_window_height{600};
+static constexpr int k_window_width{700};
+static constexpr int k_window_height{700};
 
 static Window window(k_window_width, k_window_height, "OpenGL Test");
 
@@ -52,27 +53,33 @@ int main()
 
   glBindVertexArray(0);
 
-  Shader shader("../src/vertex.vs", "../src/fragment.fs");
+  Shader waterShader("../src/shaders/water.vs", "../src/shaders/water.fs");
 
-  // glEnable(GL_BLEND);
-  // glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-  // glDepthMask(GL_FALSE); // don't write depth
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+  glDepthMask(GL_FALSE); // don't write depth
   // draw transparent objects LAST
 
   // let vertex shader determine point size
   // glEnable(GL_PROGRAM_POINT_SIZE);
 
   glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+  Square square {glm::vec2{0., 0.6}, 0.2};
+
   while(!glfwWindowShouldClose(window.get_window())) {
     glClearColor(0.14, 0.11, 0.12, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);  
 
-    shader.use();
+    square.update(glfwGetTime());
+    square.draw();
 
-    int resolutionLocation = glGetUniformLocation(shader.m_id, "resolution");
+    waterShader.use();
+
+    int resolutionLocation = glGetUniformLocation(waterShader.m_id, "resolution");
     glUniform2f(resolutionLocation, k_window_width, k_window_height); 
     
-    int timeLocation = glGetUniformLocation(shader.m_id, "time");
+    int timeLocation = glGetUniformLocation(waterShader.m_id, "time");
     glUniform1f(timeLocation, glfwGetTime()); 
     glBindVertexArray(VAO);
     //glDrawArrays(GL_POINTS, 0, n * n);
