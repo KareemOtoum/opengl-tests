@@ -53,7 +53,7 @@ int main()
 
   glBindVertexArray(0);
 
-  Shader waterShader("../src/shaders/water.vs", "../src/shaders/water.fs");
+  Shader waterShader("shaders/water.vs", "shaders/water.fs");
 
   glEnable(GL_BLEND);
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

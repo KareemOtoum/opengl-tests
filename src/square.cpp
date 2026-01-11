@@ -4,8 +4,8 @@ Square::Square(glm::vec2 position, float width)
  : position_{position},
    width_{width},
    shader_{
-    "../src/shaders/square.vs", 
-    "../src/shaders/square.fs"
+    "shaders/square.vs", 
+    "shaders/square.fs"
     } {
   glGenVertexArrays(1, &VAO_);
   glGenBuffers(1, &VBO_);
