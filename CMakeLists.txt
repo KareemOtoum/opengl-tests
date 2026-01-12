@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(OpenGLDemo)
+project(main)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -9,11 +9,10 @@ add_subdirectory(external/glfw)
 
 # Collect all .cpp files
 file(GLOB SOURCES 
-    src/water.cpp
+    src/3d.cpp
     src/glad.c
     src/shader.cpp
     src/std_loader.cpp
-    src/square.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -40,4 +39,13 @@ add_custom_command(
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         ${CMAKE_SOURCE_DIR}/src/shaders
         $<TARGET_FILE_DIR:${PROJECT_NAME}>/shaders
+)
+
+#put images in build folder
+add_custom_command(
+    TARGET ${PROJECT_NAME}
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/images
+        $<TARGET_FILE_DIR:${PROJECT_NAME}>/images
 )

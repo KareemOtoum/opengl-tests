@@ -2,6 +2,9 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <cmath>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include "shader.h"
 #include "stb_image.h"
@@ -12,6 +15,9 @@ static constexpr int k_window_height { 600 };
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void process_input(GLFWwindow *window);
 void render_triangle();
+
+glm::mat4 trans(1.0f);
+
 
 int main() {
     glfwInit();
@@ -38,7 +44,7 @@ int main() {
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     int width, height, nrChannels;
-    unsigned char* data = stbi_load("../images/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load("images/cardboardbox.jpg", &width, &height, &nrChannels, 0);
 
     unsigned int texture;
     glGenTextures(1, &texture);
@@ -48,14 +54,14 @@ int main() {
 
     stbi_image_free(data);
 
-    Shader shader("../src/vertex.vs", "../src/fragment.fs");
+    Shader shader("shaders/box.vs", "shaders/box.fs");
 
     float vertices[] {
-        // positions            // colors       // tex coords
-        -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,   0.0f, 0.0f, 
-        -0.5f, 0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   0.0f, 1.0f, 
-        0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   1.0f, 0.0f, 
-        0.5f, 0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   1.0f, 1.0f
+        // positions       // tex coords
+        -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 
+        -0.5f, 0.5f, 0.0f,  0.0f, 1.0f, 
+        0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 
+        0.5f, 0.5f, 0.0f,   1.0f, 1.0f
     };
 
     unsigned int indices[] {
@@ -70,24 +76,27 @@ int main() {
 
     glBindVertexArray(VAO);
 
+    // VBO
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    // Position attrib
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
     
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    // TexCoord attrib
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
-    
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
 
+    // EBO
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // DONT unbind EBO 
+
+    trans = glm::scale(trans, glm::vec3(1, 1, 1));
 
     while(!glfwWindowShouldClose(window)) {
 
@@ -99,6 +108,8 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT);   
 
         shader.use();
+        unsigned int transformLoc = glGetUniformLocation(shader.m_id, "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
         
         glBindTexture(GL_TEXTURE_2D, texture);
         glBindVertexArray(VAO);
@@ -124,7 +135,21 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 
 void process_input(GLFWwindow *window) {
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-    glfwSetWindowShouldClose(window, true);
+        glfwSetWindowShouldClose(window, true);
+
+    if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
+        trans = glm::scale(trans, glm::vec3(1.1, 1.1, 1.1));
+    }
+    if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+        trans = glm::scale(trans, glm::vec3(0.9, 0.9, 0.9));
+    }
+    if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
+        trans = glm::translate(trans, glm::vec3(0.1, 0, 0));
+    }
+    if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
+        trans = glm::translate(trans, glm::vec3(-0.1, 0, 0));
+    }
+
 }
 
 void render_triangle() {
