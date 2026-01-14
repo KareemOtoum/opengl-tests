@@ -8,6 +8,7 @@
 
 #include "shader.h"
 #include "stb_image.h"
+#include "camera.h"
 
 static constexpr int k_window_width { 1280 };
 static constexpr int k_window_height { 720 };
@@ -17,18 +18,18 @@ void process_input(GLFWwindow *window);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void render_triangle();
 
-glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
-
 float deltaTime{};
 float lastFrame{};
 
-float pitch{};
-float yaw{ -90.0f };
+float lastX;
+float lastY;
 
-float lastX{ k_window_width / 2 };
-float lastY{ k_window_height / 2 };
+Camera camera(
+    glm::vec3(0.0f, 0.0f,  3.0f),
+    glm::vec3(0.0f, 1.0f,  0.0f),
+    -90.0f,
+    0
+);
 
 int main() {
     glfwInit();
@@ -169,13 +170,11 @@ int main() {
     };
 
     glfwSetCursorPosCallback(window, mouse_callback);  
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);  
 
     if (glfwRawMouseMotionSupported())
     {
         glfwSetInputMode(window, GLFW_RAW_MOUSE_MOTION, GLFW_TRUE);
     }
-
 
     while(!glfwWindowShouldClose(window)) {
         float currentTime = glfwGetTime();
@@ -191,13 +190,7 @@ int main() {
 
         shader.use();
 
-            
-        glm::mat4 view;
-        view = glm::lookAt(
-            cameraPos,                  // camera position
-            cameraPos + cameraFront,    // origin
-            cameraUp                    // up direction
-        );
+        glm::mat4 view = camera.GetViewMatrix();
 
         unsigned int viewLoc = glGetUniformLocation(shader.m_id, "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
@@ -239,13 +232,13 @@ void process_input(GLFWwindow *window) {
 
     const float camSpeed = 8 * deltaTime;
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        cameraPos += cameraFront * camSpeed;
+        camera.ProcessKeyboard(Camera::FORWARD, deltaTime);
     if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        cameraPos -= cameraFront * camSpeed;
+        camera.ProcessKeyboard(Camera::BACKWARD, deltaTime);
     if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * camSpeed;
+        camera.ProcessKeyboard(Camera::LEFT, deltaTime);
     if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * camSpeed;
+        camera.ProcessKeyboard(Camera::RIGHT, deltaTime);
 
 }
 
@@ -254,19 +247,7 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
     float ydiff = lastY - ypos;
     lastX = xpos;
     lastY = ypos;
-
-    float sensitivity = 0.01f;
-    xdiff *= sensitivity;
-    ydiff *= sensitivity;
-
-    yaw += xdiff;
-    pitch += ydiff;
-
-    // calculate forwards vector;
-    cameraFront.x = glm::cos(yaw) * glm::cos(pitch);
-    cameraFront.y = glm::sin(pitch);
-    cameraFront.z = glm::sin(yaw) * glm::cos(pitch);
-
+    camera.ProcessMouseMovement(xdiff, ydiff);
 }
 
 void render_triangle() {
