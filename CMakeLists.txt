@@ -9,9 +9,8 @@ add_subdirectory(external/glfw)
 
 # Collect all .cpp files
 file(GLOB SOURCES 
-    src/3d.cpp
+    src/lighting.cpp
     src/glad.c
-    src/shader.cpp
     src/std_loader.cpp
 )
 
